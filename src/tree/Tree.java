@@ -1,8 +1,8 @@
-package tree.hard;
+package tree;
 
 import java.util.Stack;
 
-class Tree {
+public class Tree {
     private Node rootNode; // корневой узел
 
     public Tree() { // Пустое дерево
@@ -128,6 +128,7 @@ class Tree {
         // Если преемник не является
         if (heirNode != node.getRightChild()) // правым потомком,
         { // создать связи между узлами
+            heirNode.setLeftChild(node.getLeftChild());
             parentNode.setLeftChild(heirNode.getRightChild());
             heirNode.setRightChild(node.getRightChild());
         }

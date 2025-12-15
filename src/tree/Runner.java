@@ -1,6 +1,6 @@
-package tree.hard;
+package tree;
 
-public class TreeRunner {
+public class Runner {
     public static void main(String[] args) {
         Tree tree = new Tree();
         // вставляем узлы в дерево:

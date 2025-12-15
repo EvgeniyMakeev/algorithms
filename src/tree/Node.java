@@ -1,6 +1,6 @@
-package tree.hard;
+package tree;
 
-class Node {
+public class Node {
     private int value; // ключ узла
     private Node leftChild; // Левый узел потомок
     private Node rightChild; // Правый узел потомок
